@@ -10,10 +10,10 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Release Homebrew Formula
-          uses: garden-io/update-homebrew-action@v1
-          with:
-            packageName: 'bt-swgit'
-            templatePath: 'bt-swgit.rb'
-            tapRepo: '9bany/homebrew-bt-swgit'
-            srcRepo: '9bany/bt-swgit'
-            authToken: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        uses: garden-io/update-homebrew-action@v1
+        with:
+          packageName: 'bt-swgit'
+          templatePath: 'bt-swgit.rb'
+          tapRepo: '9bany/homebrew-bt-swgit'
+          srcRepo: '9bany/bt-swgit'
+          authToken: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
